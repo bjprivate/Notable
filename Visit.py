@@ -32,7 +32,7 @@ class Visit:
             if len(order.insurance_allowed) > 0 and patient.insurance not in order.insurance_allowed:
                 continue
 
-            # Evalute patient age    
+            # Evaluate patient age    
             if order.min_age <= patient.age:
                 if order.max_age >= patient.age:
 
